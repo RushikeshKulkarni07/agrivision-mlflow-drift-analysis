@@ -1,0 +1,2 @@
+# analysis.py, noise_floor.py and the tests use only the Python standard library.
+# Nothing needs to be installed to run them.

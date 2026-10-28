@@ -1,0 +1,62 @@
+{
+  "drifted_features": [
+    "image_brightness",
+    "image_sharpness",
+    "top1_confidence",
+    "inference_latency_ms"
+  ],
+  "features": {
+    "image_brightness": {
+      "current_mean": 103.9576,
+      "psi": 1.1539,
+      "reference_mean": 128.2074,
+      "status": "significant drift"
+    },
+    "image_sharpness": {
+      "current_mean": 153.7521,
+      "psi": 1.7303,
+      "reference_mean": 211.3662,
+      "status": "significant drift"
+    },
+    "image_size_kb": {
+      "current_mean": 318.3789,
+      "psi": 0.0319,
+      "reference_mean": 322.7836,
+      "status": "low change"
+    },
+    "inference_latency_ms": {
+      "current_mean": 474.6571,
+      "psi": 0.5509,
+      "reference_mean": 422.9382,
+      "status": "significant drift"
+    },
+    "top1_confidence": {
+      "current_mean": 0.7884,
+      "psi": 0.9276,
+      "reference_mean": 0.8749,
+      "status": "significant drift"
+    }
+  },
+  "method": "Population Stability Index (PSI)",
+  "overall_drift_detected": true,
+  "parameters": {
+    "psi_bins": 10,
+    "psi_moderate_threshold": 0.1,
+    "psi_significant_threshold": 0.25,
+    "records_per_window": 500,
+    "seed": 49
+  },
+  "project": "AgriVision AI crop disease detection",
+  "rates": {
+    "correct_prediction": {
+      "change_percentage_points": -9.4,
+      "current_rate": 0.82,
+      "reference_rate": 0.914
+    },
+    "expert_referral": {
+      "change_percentage_points": 22.8,
+      "current_rate": 0.232,
+      "reference_rate": 0.004
+    }
+  }
+}
